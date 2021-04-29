@@ -84,7 +84,7 @@ const optionTwoId = cardsChosenId[1]
 if(optionOneId == optionTwoId) {
     cartas[optionOneId].setAttribute('src', 'imagens/blank.png')
     cartas[optionTwoId].setAttribute('src', 'imagens/blank.png')
-    alert('Tu selecionou a mesma imagem duas vezes mano...')
+    alert('Tu selecionou a mesma imagem duas vezes...')
 
 }
 else if(cardsChosen[0] === cardsChosen[1]) {
@@ -98,7 +98,7 @@ else if(cardsChosen[0] === cardsChosen[1]) {
 } else {
     cartas[optionOneId].setAttribute('src', 'imagens/blank.png')
     cartas[optionTwoId].setAttribute('src', 'imagens/blank.png')
-    alert('Errou, tenta novamente, tonto.')
+    alert('Errou, tente novamente.')
 }
 
 
@@ -106,7 +106,7 @@ cardsChosen = []
 cardsChosenId = []
 resultDisplay.textContent = cardsWon.length
 if(cardsWon.length === cardArray.length/2) {
-    resultDisplay.textContent = 'PARABAINS, Achou tudin'
+    resultDisplay.textContent = 'Parabens!, Achou todos.'
 }
 }
 //Vire sua carta
